@@ -134,18 +134,15 @@
                     android:textColor="#FFFFFF"
                     android:textSize="15.0sp" />
 
-                <TextView
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/facebookLogin"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5.5dip"
                     android:layout_weight="1.0"
-                    android:background="@drawable/blue_rect"
-                    android:gravity="center"
                     android:paddingTop="13.5dip"
-                    android:paddingBottom="13.5dip"
-                    android:text="Facebook"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15.0sp" />
+                    android:paddingBottom="16.5dip"
+                    android:textColor="#FFFFFF" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
