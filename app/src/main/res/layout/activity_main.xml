@@ -37,15 +37,32 @@
 
     </RelativeLayout>
 
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="270dp"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/drawer_menu_items" >
+        android:background="#FFFFFF"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:layout_gravity="start">
 
-    </com.google.android.material.navigation.NavigationView>
+            <ImageView
+                android:background="#696969"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/drawer_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
