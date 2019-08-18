@@ -5,11 +5,20 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dp"
+        android:background="#ffd7d4d4"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <RelativeLayout
         android:id="@+id/rlContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
+
 
         <RelativeLayout
             android:id="@+id/rlIndicator"
@@ -48,16 +57,6 @@
                 android:fontFamily="sans-serif"
                 android:textColor="#ca000000"
                 android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/tvDesignation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:text="Sr. Android Developer"
-                android:textColor="#30000000"
-                android:textStyle="italic"
-                android:textSize="9sp" />
 
 
         </LinearLayout>

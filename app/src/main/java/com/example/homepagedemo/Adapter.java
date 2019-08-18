@@ -35,10 +35,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         final Model model = modelsAll.get(position);
         holder.textView.setText(model.name);
-        holder.tvDesignation.setText(model.designation);
 
         holder.itemView.setTag(R.string.MODEL, model);
         holder.itemView.setTag(R.string.position, position);
+
+        if(model.getLevel()>1) {
+            holder.divider.setVisibility(View.INVISIBLE);
+        }
+        else {
+            holder.divider.setVisibility(View.VISIBLE);
+        }
 
         RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) holder.rlContent.getLayoutParams();
         layoutParams.setMargins(((int) convertDpToPixel(20, context)) * model.level, layoutParams.topMargin,
@@ -128,18 +134,18 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         RelativeLayout rlContent;
         TextView textView;
-        TextView tvDesignation;
         ImageView imgArrow;
         View viewDashed;
+        View divider;
 
         public ViewHolder(View itemView) {
 
             super(itemView);
+            divider = itemView.findViewById(R.id.divider);
             textView = (TextView) itemView.findViewById(R.id.tvName);
             imgArrow = (ImageView) itemView.findViewById(R.id.imgArrow);
             rlContent = (RelativeLayout) itemView.findViewById(R.id.rlContent);
             viewDashed = itemView.findViewById(R.id.viewDashed);
-            tvDesignation = (TextView) itemView.findViewById(R.id.tvDesignation);
         }
     }
 

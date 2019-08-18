@@ -12,13 +12,22 @@ public class Model {
     String name;
     int level;
     STATE state = STATE.CLOSED;
-    String designation;
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
     ArrayList<Model> models = new ArrayList<>();
 
-    public Model(String name, int level , String designation) {
+
+
+    public Model(String name, int level) {
         this.name = name;
         this.level = level;
-        this.designation = designation;
     }
 
 }
