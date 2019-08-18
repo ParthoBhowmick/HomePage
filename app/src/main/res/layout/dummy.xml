@@ -19,15 +19,9 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:background="#C9C9C9"
+                android:padding="10dp"
+                android:paddingBottom="15dp"
                 android:src="@drawable/logo" />
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="19.0dip"
-                android:gravity="center_horizontal"
-                android:text="WORLD’s Leading Ecommerce Platform"
-                android:textColor="#000" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="fill_parent"
@@ -57,6 +51,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:layout_marginLeft="24.699982dip"
                 android:layout_marginRight="23.0dip"
                 android:textColorHint="#000">
@@ -92,7 +87,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16.0dip"
-                android:layout_marginTop="52.0dip"
+                android:layout_marginTop="35.0dip"
                 android:layout_marginRight="16.0dip"
                 android:background="@drawable/button_rect"
                 android:gravity="center_horizontal"
@@ -115,7 +110,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16.0dip"
-                android:layout_marginTop="17.299988dip"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="16.0dip"
                 android:layout_marginBottom="13.0dip"
                 android:gravity="center_horizontal"
