@@ -1,5 +1,11 @@
 package com.example.homepagedemo;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,11 +17,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.awt.MenuItem;
+
 import java.util.ArrayList;
 
-import javax.swing.text.View;
-import javax.swing.text.html.ImageView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -142,7 +147,6 @@ public class MainActivity extends AppCompatActivity {
         models.add(model1_1);
         models.add(model1_2);
         models.add(model1_4);
-
 
         return models;
     }
