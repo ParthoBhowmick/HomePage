@@ -13,6 +13,7 @@
         android:layout_height="match_parent">
 
         <include
+            android:id="@+id/toolbar_home"
             layout="@layout/homepage_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,9 +21,18 @@
 
 
         <FrameLayout
+            android:layout_below="@+id/toolbar_home"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:layout_above="@+id/bottom_navigation">
+
+            <include layout="@layout/homepage_content"
+
+                />
+
+
         </FrameLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView

@@ -1,36 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#C9C9C9">
 
         <ImageView
             android:id="@+id/sale_icon"
-            android:src="@drawable/sale_icon"
-            android:layout_width="25dp"
-            android:layout_height="25dp"/>
+            android:background="#FFFFFF"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/flash_icon" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_marginLeft="35dp"
             android:layout_height="wrap_content"
-            android:text="Deals of the Week"/>
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="2dp"
+            android:text="Deals of the Week"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:text="More >>"
             android:textColor="#009"
-            android:text="More >>"/>
-
-
+            android:textSize="15sp" />
 
     </RelativeLayout>
 
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:padding="10dp"
+        android:rowCount="2">
 
+        <!-- R:1 C:1 -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp">
+
+            <include layout="@layout/homepage_single_prod" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- R:1 C:2 -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <include
+                layout="@layout/homepage_single_prod"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- R:1 C:3 -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <include
+                layout="@layout/homepage_single_prod"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- R:2 C:1 -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <include
+                layout="@layout/homepage_single_prod"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- R:2 C:2 -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <include
+                layout="@layout/homepage_single_prod"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- R:2 C:3 -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <include
+                layout="@layout/homepage_single_prod"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </GridLayout>
+
+    <include
+        layout="@layout/homepage_new_prod"
+        />
 
 </LinearLayout>
